@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { View, Image, TouchableOpacity, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
 import logo from '../../../assets/logo.png';
 
 const SignIn: React.FC = () => {
+  const { navigate } = useNavigation();
+
+  const handleNavigateToDashboardPage = useCallback(() => {
+    navigate('Dashboard');
+  }, []);
+
   return (
     <View style={styles.container}>
       <Image source={logo} style={styles.logo} />
-      <TouchableOpacity style={styles.button}>
+      <RectButton style={styles.button} onPress={handleNavigateToDashboardPage}>
         <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
+      </RectButton>
     </View>
   );
 }
