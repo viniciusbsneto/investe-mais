@@ -26,7 +26,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
           <Image source={backIcon} resizeMode="contain" />
         </BorderlessButton>
 
-        <Text style={styles.headerText}>Invest+</Text>
+        <Text style={styles.headerText}>#HackatonSafraTime40</Text>
       </View>
 
       <Text style={styles.title}>{title}</Text>
