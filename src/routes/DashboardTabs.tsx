@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../pages/Home';
-import Transactions from '../pages/Transactions';
+import CreditCard from '../pages/CreditCard';
 import Investments from '../pages/Investments';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -42,19 +42,19 @@ const DashboardTabs: React.FC = () => {
         options={{
           tabBarIcon: ({ color, size }) => {
             return (
-              <Ionicons name="md-home" size={size} color={color} />
+              <Ionicons name="ios-home" size={size} color={color} />
             );
           }
         }}
       />
       <Screen
-        name="Transactions"
-        component={Transactions}
+        name="CreditCard"
+        component={CreditCard}
         options={{
-          tabBarLabel: 'Transações',
+          tabBarLabel: 'Crédito',
           tabBarIcon: ({ color, size }) => {
             return (
-              <Ionicons name="logo-usd" size={size} color={color} />
+              <Ionicons name="ios-card" size={size} color={color} />
             );
           }
         }}

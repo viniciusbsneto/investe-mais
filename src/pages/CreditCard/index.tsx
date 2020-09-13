@@ -5,12 +5,12 @@ import PageHeader from '../../components/PageHeader';
 
 import styles from './styles';
 
-const Investments: React.FC = () => {
+const CreditCard: React.FC = () => {
   return (
     <View style={styles.container}>
-      <PageHeader title="Seus investimentos" />
+      <PageHeader title="Suas faturas" />
     </View>
   );
 }
 
-export default Investments;
+export default CreditCard;
