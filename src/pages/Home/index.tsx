@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { View, Text } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Ionicons as Icon } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 import PageHeader from '../../components/PageHeader';
 
 import styles from './styles';
 
 const Home: React.FC = () => {
+  const { navigate } = useNavigation();
+
+  const handleNavigateToInvestPlus = useCallback(() => {
+    navigate('InvestPlus');
+  }, []);
+
   return (  
     <View style={styles.container}>
       <PageHeader title="Bem-vindo, Caio!" />
@@ -37,7 +44,7 @@ const Home: React.FC = () => {
             <Text style={styles.buttonText}>Extrato</Text>
           </RectButton>
 
-          <RectButton style={styles.button}>
+          <RectButton style={styles.button} onPress={handleNavigateToInvestPlus}>
             <Icon style={styles.buttonIcon} name="ios-trending-up" size={20}/>
             <Text style={styles.buttonText}>Invest+</Text>
           </RectButton>
