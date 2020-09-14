@@ -7,6 +7,8 @@ import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import AppStack from './src/routes/AppStack';
 
+import AppProvider from './src/hooks';
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     RobotoSlab_400Regular,
@@ -20,8 +22,10 @@ export default function App() {
   } else {
     return (
       <>
-        <AppStack />
-        <StatusBar style="light" />
+        <AppProvider>
+          <AppStack />
+          <StatusBar style="light" />
+        </AppProvider>
       </>
     );
   }
