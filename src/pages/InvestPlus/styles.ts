@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   investTitle: {
     color: '#1e2044',
     fontFamily: 'Roboto_700Bold',
-    fontSize: 18,
+    fontSize: 20,
     marginBottom: 24,
   },
 
