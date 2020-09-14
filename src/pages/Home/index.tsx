@@ -6,6 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 
 import PageHeader from '../../components/PageHeader';
 
+import { formatPrice } from '../../util/format';
+
 import styles from './styles';
 import api from '../../services/api';
 import { useAuth } from '../../hooks/auth';
@@ -13,7 +15,6 @@ import { useAuth } from '../../hooks/auth';
 const Home: React.FC = () => {
   const { navigate } = useNavigation();
   const { user } = useAuth();
-
 
   const handleNavigateToInvestPlus = useCallback(() => {
     navigate('InvestPlus');
@@ -27,7 +28,7 @@ const Home: React.FC = () => {
           <Text style={styles.balanceTitle}>Conta</Text>
           <View style={styles.balanceAvailableContainer}>
             <Text style={styles.balanceAvailableText}>Saldo disponível:</Text>
-            <Text style={styles.balanceAvailableValue}>{`R$${user.Amount}`}</Text>
+            <Text style={styles.balanceAvailableValue}>{formatPrice(Number(user.Amount))}</Text>
           </View>
         </View>
       </View>

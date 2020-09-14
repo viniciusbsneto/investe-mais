@@ -8,6 +8,7 @@ import PageHeader from '../../components/PageHeader';
 import { useAuth } from '../../hooks/auth';
 
 import styles from './styles';
+import { formatPrice } from '../../util/format';
 
 const InvestPlus: React.FC = () => {
   const { navigate } = useNavigation();
@@ -50,7 +51,7 @@ const InvestPlus: React.FC = () => {
               <Text style={styles.investTitle}>Invista agora</Text>
               <View style={styles.investAvailableContainer}>
                 <Text style={styles.investAvailableText}>Capital disponível:</Text>
-                <Text style={styles.investAvailableValue}>{`R$${user.Amount}`}</Text>
+                <Text style={styles.investAvailableValue}>{formatPrice(Number(user.Amount))}</Text>
               </View>
             </View>
           </RectButton>
