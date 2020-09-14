@@ -3,17 +3,17 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/viniciusbsneto/investe-plus?color=blue">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/viniciusbsneto/investe-mais?color=blue">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/viniciusbsneto/investe-plus">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/viniciusbsneto/investe-mais">
   
-  <a href="https://github.com/viniciusbsneto/investe-plus/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/viniciusbsneto/investe-plus">
+  <a href="https://github.com/viniciusbsneto/investe-mais/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/viniciusbsneto/investe-mais">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
-   <a href="https://github.com/viniciusbsneto/investe-plus/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/viniciusbsneto/investe-plus?style=social">
+   <a href="https://github.com/viniciusbsneto/investe-mais/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/viniciusbsneto/investe-mais?style=social">
   </a>
 
   <a href="https://github.com/viniciusbsneto">
