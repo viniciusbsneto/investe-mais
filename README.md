@@ -1,19 +1,9 @@
-
-
 <h1 align="center">
-    <img alt="Investe+" title="#Investe+" src="" />
+   <a href="#"> Investe+ </a>
 </h1>
-
-<h1 align="center">
-   :red_circle: <a href="#"> Investe+ </a> :white_circle:
-</h1>
-
-<h3 align="center">
-    Investe+.
-</h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/viniciusbsneto/investe-plus?color=red">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/viniciusbsneto/investe-plus?color=blue">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/viniciusbsneto/investe-plus">
   
@@ -21,25 +11,23 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/viniciusbsneto/investe-plus">
   </a>
     
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
    <a href="https://github.com/viniciusbsneto/investe-plus/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/viniciusbsneto/investe-plus?style=social">
   </a>
 
   <a href="https://github.com/viniciusbsneto">
-    <img alt="made by viniciusbsneto" src="https://img.shields.io/badge/-viniciusbsneto-red">
+    <img alt="made by viniciusbsneto" src="https://img.shields.io/badge/-viniciusbsneto-blue">
   </a>
 </p>
 
 
 <h4 align="center"> 
-	 Status: Finished 🚧 Testing... 🚧
+	 Status: Finished
 </h4>
 
 <p align="center">
  <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#pending-to-do">Pending (to do)</a> •
  <a href="#how-it-works">How it works</a> • 
  <a href="#tech-stack">Tech Stack</a> •  
  <a href="#author">Author</a> • 
@@ -53,17 +41,7 @@ Investe+ - is an investment mobile app.
 
 ---
 ## Layout
-[Figma](https://www.figma.com/file/Gc5rUs6DBItoDxjUJAHVB0/Catch-N-Mall?node-id=0%3A1)
-
----
-## :bulb: Features
-
-
-
----
-
-## :hammer_and_wrench: Pending (in progress...) :hourglass_flowing_sand:
-
+[Figma](https://www.figma.com/file/ynpLiOwqvZaJ5Fvq913XOB/Untitled?node-id=0%3A1)
 
 ### :pushpin: Pre-requisites
 
@@ -71,23 +49,28 @@ Before you begin, you will need to have the following tools installed on your ma
 [Git] (https://git-scm.com), [Yarn] (https://yarnpkg.com/).
 In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
 
-#### Running the web application
+#### Running mobile app
 
 ```bash
+# Install Expo
+yarn global add expo-cli
 
 # Clone this repository
-$ git clone git@github.com:viniciusbsneto/investe-plus.git
+$ git clone git@github.com:viniciusbsneto/investe-mais.git
 
 # Access the project folder
-$ cd investe-plus/web
+$ cd investe-mais/web
 
 # Install dependencies
 $ yarn install
 
-# Start the application
-yarn start
+# Start the development server
+expo start
 
-# Yarn script will start the application at http://localhost:3000
+# Make sure you have your mobile device connected to the same network as the development server
+# In your mobile device, install Expo app from the Play Store/App Store
+# Start the Expo app in your mobile device and scan the QR Code shown in the development server console in your web browser
+# Invest+ mobile app will start in your mobile device. We hope you enjoy it!
 
 ```
 
@@ -97,21 +80,18 @@ yarn start
 
 The following tools were used in the construction of the project:
 
-#### [](https://github.com/viniciusbsneto/investe-plus#investe-plus-web-application)**Investe+ Mobile App**
+#### [](https://github.com/viniciusbsneto/investe-mais#investe-mais-web-application)**Investe+ Mobile App**
 
 -   **[Typescript](https://www.typescriptlang.org/)**
 -   **[React Native](https://en.reactjs.org/)**
 -   **[Expo](https://create-react-app.dev/)**
 -   **[Axios](https://github.com/axios/axios)**
 
-> See the file  [package.json](https://github.com/viniciusbsneto/investe-plus/blob/master/package.json)
+> See the file  [package.json](https://github.com/viniciusbsneto/investe-mais/blob/master/package.json)
 
-#### [](https://github.com/viniciusbsneto/investe-plus#utilit%C3%A1rios)**Utilitários**
+#### [](https://github.com/viniciusbsneto/investe-mais#utilit%C3%A1rios)**Utilitários**
 
 -   Code Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
--   Linter:  **[ESLint](https://eslint.org/)**
--   Code Formatter:  **[Prettier](https://prettier.io/)**
--   Editor Plugin:  **[EditorConfig](https://editorconfig.org/)**
 -   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
 -   Layout: **[Figma](https://www.figma.com/)**
 
@@ -127,7 +107,7 @@ The following tools were used in the construction of the project:
 
 ---
 
-## :technologist: Authors
+## :technologist: Author
 
  <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/17788722?v=4" width="100px;" alt="Vinícius Neto"/> 
  <br />
@@ -141,4 +121,4 @@ The following tools were used in the construction of the project:
 
 This project is under the license [MIT](./LICENSE).
 
-Made with love by Team 40 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/vinicius-neto/)
+Made with love by Safra Technee - Hackaton Team 40 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/vinicius-neto/)
