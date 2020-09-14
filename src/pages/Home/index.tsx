@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Ionicons as Icon } from '@expo/vector-icons';
@@ -7,9 +7,13 @@ import { useNavigation } from '@react-navigation/native';
 import PageHeader from '../../components/PageHeader';
 
 import styles from './styles';
+import api from '../../services/api';
+import { useAuth } from '../../hooks/auth';
 
 const Home: React.FC = () => {
   const { navigate } = useNavigation();
+  const { user } = useAuth();
+
 
   const handleNavigateToInvestPlus = useCallback(() => {
     navigate('InvestPlus');
@@ -17,13 +21,13 @@ const Home: React.FC = () => {
 
   return (  
     <View style={styles.container}>
-      <PageHeader title="Bem-vindo, Caio!" />
+      <PageHeader title={`Bem vindo, ${user.Nickname}`} />
       <View style={styles.balanceContainer}>
         <View style={styles.balance}>
           <Text style={styles.balanceTitle}>Conta</Text>
           <View style={styles.balanceAvailableContainer}>
             <Text style={styles.balanceAvailableText}>Saldo disponível:</Text>
-            <Text style={styles.balanceAvailableValue}>R$1.587,48</Text>
+            <Text style={styles.balanceAvailableValue}>{`R$${user.Amount}`}</Text>
           </View>
         </View>
       </View>
